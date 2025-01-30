@@ -1,9 +1,9 @@
 *,
 *::after,
 *::before {
-  padding: 0;
-  margin: 0;
   box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bolder;
 }
 
 :root {
@@ -1359,4 +1359,34 @@ body {
 
 .not-loaded * {
   animation-play-state: paused !important;
+}
+
+.bemyvalentine {
+  color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 15rem;
+  flex-direction: column;
+  text-align: center;
+  gap: 1rem;
+
+  .buttons {
+    display: flex;
+    gap: 1rem;
+  }
+}
+
+button {
+  padding: 0.5rem 1rem;
+}
+
+.yes.btn,
+.no-btn {
+  display: none;
 }
